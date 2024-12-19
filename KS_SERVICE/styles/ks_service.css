@@ -1,0 +1,289 @@
+/* Style global pour une apparence professionnelle et soignée */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 20;
+  margin-right: 20;
+  padding: 0;
+  line-height: 1.8;
+  background-color: #f9f9f9;
+  width: 100%;
+  background-image: url('../medias/background.png');
+  background-size: cover; /* Adapte l'image à l'écran */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Pas de répétition */
+  background-attachment: fixed; /* L'image reste fixe lors du défilement */
+
+}
+
+/* En-tête professionnel */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 30px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 25;
+  width: 100%;
+}
+header h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+/* Style de base pour le menu vertical */
+.vertical-menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%; /* Largeur du menu */
+  background-color: #333; /* Couleur de fond */
+  overflow: hidden; /* Cache les débordements */
+  transition: width 0.3s ease; /* Animation fluide lors du pliage/dépliage */
+  z-index: 15;
+}
+
+
+/* Style de base pour la navigation */
+.vertical-menu nav ul {
+  margin-left: 30px;
+  margin-right: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.vertical-menu nav ul li {
+  margin: 0;
+  padding: 2px 0; /* Réduit l'espacement interne, modifiez selon vos besoins */
+  border-bottom: 1px solid #ddd; /* Exemple de séparation */
+}
+
+.vertical-menu nav ul li:last-child {
+  border-bottom: none;
+}
+
+.vertical-menu nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 25px;
+  display: block;
+  font-weight: 500;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+.vertical-menu nav ul li a:hover {
+  background-color: #444; /* Couleur au survol */
+}
+
+
+/* Section de présentation */
+.prof {
+  text-align: center;
+  padding: 0;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  margin-top: 35px; /* Évite le chevauchement avec la barre */
+  margin-bottom: 35px;
+}
+.prof img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  margin-top: 15px; /* Évite le chevauchement avec la barre */
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+}
+.prof P {
+  font-size: 1.5em;
+  color: #333;
+  margin: 10px 0;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.prof span {
+  color: #fb0505;
+  font-weight: 600;
+}
+
+/* Sections principales bien structurées */
+main .sect {
+  padding: 30px 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  margin-top: 0px; /* Évite le chevauchement */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+main .sect h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Galerie de photos moderne */
+.photo {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.photo div {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Prestations détaillées et attrayantes */
+.prestations {
+  padding: 40px 20px;
+}
+.prestations .men, .prestations .men1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.prestations .service1, .prestations .service2, .prestations .service3, .prestations .service4 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 260px;
+}
+.prestations .titre {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.prestations .titre img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.prestations h4 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #333;
+}
+.prestations p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Section "Contactez-nous" propre et accessible */
+.section2 {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+}
+.section2 .bu img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 25px 0;
+  border-radius: 10px;
+}
+.section2 form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.section2 input[type="text"],
+.section2 input[type="email"],
+.section2 textarea {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.section2 input[type="text"]:focus,
+.section2 input[type="email"]:focus,
+.section2 textarea:focus {
+  border-color: #222;
+  outline: none;
+  box-shadow: 0 0 5px rgba(34, 34, 34, 0.5);
+}
+.section2 input[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.section2 input[type="submit"]:hover {
+  background-color: #444;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton "En haut de la page" clair et accessible */
+.haut {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+.haut a {
+  text-decoration: none;
+  color: #fff;
+  background-color: no;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.haut a:hover {
+  background-color:none ;
+  transform: scale(1.1);
+}
+
+.haut i {
+  font-size: 20px; /* Taille personnalisée de l'icône */
+  color: #333; /* Couleur de l'icône */
+  background-color: #f0f0f0; /* Couleur de fond */
+  border-radius: 20%; /* Rendre l'icône ronde */
+  padding: 10px; /* Ajouter de l'espace interne */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre */
+  transition: transform 0.3s, background-color 0.3s; /* Animation fluide */
+}
+
+.haut i:hover {
+  background-color: #333; /* Changer la couleur de fond au survol */
+  color: #fff; /* Changer la couleur de l'icône au survol */
+  transform: scale(1.2); /* Agrandir légèrement l'icône au survol */
+}
+
+/* Pied de page minimaliste */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: #fff;
+  font-size: 0.9em;
+  border-top: 2px solid #333;
+}
